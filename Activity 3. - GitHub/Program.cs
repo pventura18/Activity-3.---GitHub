@@ -83,7 +83,107 @@ internal class Program
     }
 
     //Pol Ventura
-    
+    public static void DoVodka(int puctuation)
+    {
+        MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo tecla;
+
+        Console.WriteLine("Question 1: For what was firstly vodka used?");
+        Console.WriteLine("1 - For medical purposes");
+        Console.WriteLine("2 - To get drunk");
+        Console.WriteLine("3 - To gain more force in the gym");
+        Console.WriteLine("4 - So people can go to war without arguing");
+
+        
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            case default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+        MsgNextScreen("NEXT...");
+
+        Console.WriteLine("Question 2: Where was vodka created?");
+        Console.WriteLine("1 - In Spain");
+        Console.WriteLine("2 - In Germany");
+        Console.WriteLine("3 - In Poland");
+        Console.WriteLine("4 - In Russia");
+
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D3:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            case default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+        MsgNextScreen("NEXT...");
+
+        Console.WriteLine("Question 3: What does vodka contain?");
+        Console.WriteLine("1 - Cholesterol");
+        Console.WriteLine("2 - Sodium");
+        Console.WriteLine("3 - Carbs");
+        Console.WriteLine("4 - Just water and ethanol");
+
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D4:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            case default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+        MsgNextScreen("NEXT...");
+
+        Console.WriteLine("Question 4: Vodka comes from the Russian word...");
+        Console.WriteLine("1 - Vodca");
+        Console.WriteLine("2 - Borca");
+        Console.WriteLine("3 - Voda");
+        Console.WriteLine("4 - Vroda");
+
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D3:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            case default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+        MsgNextScreen("NEXT...");
+
+        Console.WriteLine("Question 5: Had vodka been banned in Russia?");
+        Console.WriteLine("1 - Yes, during WW1");
+        Console.WriteLine("2 - Yes, during cold war");
+        Console.WriteLine("3 - Yes, during WW2");
+        Console.WriteLine("4 - No, never");
+
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            case default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        MsgNextScreen($"YOUR CURRENT PUNCTUATION IS {punctuation}, PRESS ANY KEY TO CONTINUE!");
+    }
     //Pol Besalú
 
     //Martí Roura
