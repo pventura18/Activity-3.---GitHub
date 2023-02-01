@@ -73,6 +73,8 @@ internal class Program
                     break;
             }
         } while (tecla.Key != ConsoleKey.D0);
+
+        Console.WriteLine($"CONGRATULATIONS YOUR PUNCTUATION IS {punctuation}!");
     }
     public static void MsgNextScreen(string msg)
     {
@@ -81,7 +83,7 @@ internal class Program
     }
 
     //Pol Ventura
-
+    
     //Pol Besalú
 
     //Martí Roura
