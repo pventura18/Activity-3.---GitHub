@@ -7,10 +7,9 @@ internal class Program
         ConsoleKeyInfo tecla;
         do
         {
+            
             Console.Clear();
-
-            tecla = Console.ReadKey();
-            Console.Clear();
+            
 
             Console.WriteLine("Main menu");
             Console.WriteLine("Press 1 for tobacco");
@@ -24,14 +23,15 @@ internal class Program
             Console.WriteLine("Press 9 or tennis");
             Console.WriteLine("Press 0 to exit");
 
+            tecla = Console.ReadKey();
             switch (tecla.Key)
             {
                 case ConsoleKey.D1:
-                    DoTobacco(punctuation);
+                    //DoTobacco(punctuation);
                     break;
 
                 case ConsoleKey.D2:
-                    DoBeer(punctuation);
+                    //DoBeer(punctuation);
                     break;
 
                 case ConsoleKey.D3:
@@ -39,27 +39,27 @@ internal class Program
                     break;
 
                 case ConsoleKey.D4:
-                    DoCoffee(punctuation);
+                    //DoCoffee(punctuation);
                     break;
 
                 case ConsoleKey.D5:
-                    DoFootball(punctuation);
+                    //DoFootball(punctuation);
                     break;
 
                 case ConsoleKey.D6:
-                    DoTattoos(punctuation);
+                    //DoTattoos(punctuation);
                     break;
 
                 case ConsoleKey.D7:
-                    DoDolphins(punctuation);
+                    //DoDolphins(punctuation);
                     break;
 
                 case ConsoleKey.D8:
-                    DoBasketball(punctuation);
+                    //DoBasketball(punctuation);
                     break;
 
                 case ConsoleKey.D9:
-                    DoTennis(punctuation);
+                    //DoTennis(punctuation);
                     break;
 
                 case ConsoleKey.D0:
@@ -72,6 +72,7 @@ internal class Program
                     MsgNextScreen("Error. Preu una tecla per tornar al menú...");
                     break;
             }
+            MsgNextScreen($"YOUR CURRENT PUNCTUATION IS {punctuation}!");
         } while (tecla.Key != ConsoleKey.D0);
 
         Console.WriteLine($"CONGRATULATIONS YOUR PUNCTUATION IS {punctuation}!");
@@ -83,7 +84,108 @@ internal class Program
     }
 
     //Pol Ventura
-    
+    public static void DoVodka(int punctuation)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo tecla;
+
+        Console.WriteLine("Question 1: For what was firstly vodka used?");
+        Console.WriteLine("1 - For medical purposes");
+        Console.WriteLine("2 - To get drunk");
+        Console.WriteLine("3 - To gain more force in the gym");
+        Console.WriteLine("4 - So people can go to war without arguing");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        
+        Console.WriteLine("Question 2: Where was vodka created?");
+        Console.WriteLine("1 - In Spain");
+        Console.WriteLine("2 - In Germany");
+        Console.WriteLine("3 - In Poland");
+        Console.WriteLine("4 - In Russia");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D3:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        
+        Console.WriteLine("Question 3: What does vodka contain?");
+        Console.WriteLine("1 - Cholesterol");
+        Console.WriteLine("2 - Sodium");
+        Console.WriteLine("3 - Carbs");
+        Console.WriteLine("4 - Just water and ethanol");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D4:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        
+        Console.WriteLine("Question 4: Vodka comes from the Russian word...");
+        Console.WriteLine("1 - Vodca");
+        Console.WriteLine("2 - Borca");
+        Console.WriteLine("3 - Voda");
+        Console.WriteLine("4 - Vroda");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D3:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        
+        Console.WriteLine("Question 5: Had vodka been banned in Russia?");
+        Console.WriteLine("1 - Yes, during WW1");
+        Console.WriteLine("2 - Yes, during cold war");
+        Console.WriteLine("3 - Yes, during WW2");
+        Console.WriteLine("4 - No, never");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
     //Pol Besalú
 
     //Martí Roura
