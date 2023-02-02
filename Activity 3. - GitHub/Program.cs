@@ -48,7 +48,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D6:
-                    DoTattoos(punctuation);
+                    DoTattoos(score);
                     break;
 
                 case ConsoleKey.D7:
@@ -60,7 +60,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D9:
-                    DoTennis(punctuation);
+                    DoTennis(score);
                     break;
 
                 case ConsoleKey.D0:
@@ -203,7 +203,7 @@ internal class Program
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
 
-    public static void DoTattoos(ref int score)
+    public static void DoTennis(ref int score)
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE TENNIS QUIZ! PRESS ANY KEY TO START");
