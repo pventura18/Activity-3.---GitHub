@@ -48,7 +48,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D6:
-                    DoTattoos(punctuation);
+                    DoTattoos(score);
                     break;
 
                 case ConsoleKey.D7:
@@ -60,7 +60,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D9:
-                    //DoTennis(punctuation);
+                    DoTennis(score);
                     break;
 
                 case ConsoleKey.D0:
@@ -102,7 +102,6 @@ internal class Program
     #endregion
 
     //Pol Ventura
-    public static void DoVodka(ref int punctuation)
     #region Pol Ventura
     public static void DoVodka(ref int score)
     {
@@ -154,7 +153,7 @@ internal class Program
     }
 
 
-    public static void DoTattoos(ref int punctuation)
+    public static void DoTattoos(ref int score)
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE TATTOO QUIZ! PRESS ANY KEY TO START");
@@ -203,8 +202,63 @@ internal class Program
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
-    //Pol Besalú
+
+    public static void DoTennis(ref int score)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE TENNIS QUIZ! PRESS ANY KEY TO START");
+
+        Console.WriteLine("Question 1: From what Anglo-Norman term does the word tennis come?");
+        Console.WriteLine("1 - Tennet");
+        Console.WriteLine("2 - Tinis");
+        Console.WriteLine("3 - Tenez");
+        Console.WriteLine("4 - Tonees");
+
+        score += PressKey(ConsoleKey.D3);
+
+
+        Console.WriteLine("Question 2: When was the first Wimbledon played?");
+        Console.WriteLine("1 - 1932");
+        Console.WriteLine("2 - 1877");
+        Console.WriteLine("3 - 1899");
+        Console.WriteLine("4 - Yesterday");
+
+        score += PressKey(ConsoleKey.D2);
+
+
+        Console.WriteLine("Question 3: How much time did the longest match last?");
+        Console.WriteLine("1 - 9 hours and 30 minutes");
+        Console.WriteLine("2 - 15 hours and 3 minutes");
+        Console.WriteLine("3 - 11 hours and 5 minutes");
+        Console.WriteLine("4 - 10 hours and 1 minute");
+
+        score += PressKey(ConsoleKey.D1);
+
+        Console.WriteLine("Question 4: Which one is NOT a professional tennis court surface?");
+        Console.WriteLine("1 - Clay");
+        Console.WriteLine("2 - Glass");
+        Console.WriteLine("3 - Carpet");
+        Console.WriteLine("4 - Sand");
+
+        score += PressKey(ConsoleKey.D4);
+
+        Console.WriteLine("Question 5: How many Grand Slams does Rafael Nadal have?");
+        Console.WriteLine("1 - 22");
+        Console.WriteLine("2 - 0");
+        Console.WriteLine("3 - 12");
+        Console.WriteLine("4 - 16");
+
+        score += PressKey(ConsoleKey.D1);
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
+
     #endregion
+
+
+
+    //Pol Besalú
+#endregion
 
     #region Pol Besalú
     #endregion
