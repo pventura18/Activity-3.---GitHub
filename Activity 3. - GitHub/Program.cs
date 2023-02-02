@@ -108,7 +108,7 @@ internal class Program
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
-        ConsoleKeyInfo key;
+        
 
         Console.WriteLine("Question 1: For what was firstly vodka used?");
         Console.WriteLine("1 - For medical purposes");
@@ -157,8 +157,7 @@ internal class Program
     public static void DoTattoos(ref int punctuation)
     {
         Console.Clear();
-        MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
-        ConsoleKeyInfo tecla;
+        MsgNextScreen("YOU CHOSE THE TATTOO QUIZ! PRESS ANY KEY TO START");
 
         Console.WriteLine("Question 1: Does your hair grow back with a tattoo?");
         Console.WriteLine("1 - Yes, but less hair.");
@@ -166,17 +165,7 @@ internal class Program
         Console.WriteLine("3 - Yes, but it falls");
         Console.WriteLine("4 - It doesn't change anything");
 
-        tecla = Console.ReadKey();
-        switch (tecla.Key)
-        {
-            case ConsoleKey.D4:
-                Console.WriteLine("CORRECT! +1 POINT");
-                punctuation++;
-                break;
-            default:
-                Console.WriteLine("INCORRECT! 0 POINTS");
-                break;
-        }
+        score += PressKey(ConsoleKey.D4);
 
 
         Console.WriteLine("Question 2: Which type of ink does it hurt the most?");
@@ -185,17 +174,7 @@ internal class Program
         Console.WriteLine("3 - It doesn't hurt");
         Console.WriteLine("4 - They all hurt the same");
 
-        tecla = Console.ReadKey();
-        switch (tecla.Key)
-        {
-            case ConsoleKey.D4:
-                Console.WriteLine("CORRECT! +1 POINT");
-                punctuation++;
-                break;
-            default:
-                Console.WriteLine("INCORRECT! 0 POINTS");
-                break;
-        }
+        score += PressKey(ConsoleKey.D4);
 
 
         Console.WriteLine("Question 3: It is good to drink alcohol before a tattoo?");
@@ -204,18 +183,7 @@ internal class Program
         Console.WriteLine("3 - Yes, why not?");
         Console.WriteLine("4 - Yes, it helps you feel less pain");
 
-        tecla = Console.ReadKey();
-        switch (tecla.Key)
-        {
-            case ConsoleKey.D1:
-                Console.WriteLine("CORRECT! +1 POINT");
-                punctuation++;
-                break;
-            default:
-                Console.WriteLine("INCORRECT! 0 POINTS");
-                break;
-        }
-
+        score += PressKey(ConsoleKey.D1);
 
         Console.WriteLine("Question 4: Chlorinated pool water discolours the tattoo?");
         Console.WriteLine("1 - No, it helps you to have more color in the tattoo");
@@ -223,18 +191,7 @@ internal class Program
         Console.WriteLine("3 - No, but it changes the colors of the tattoo for example making black tattoos blue");
         Console.WriteLine("4 - Yes");
 
-        tecla = Console.ReadKey();
-        switch (tecla.Key)
-        {
-            case ConsoleKey.D2:
-                Console.WriteLine("CORRECT! +1 POINT");
-                punctuation++;
-                break;
-            default:
-                Console.WriteLine("INCORRECT! 0 POINTS");
-                break;
-        }
-
+        score += PressKey(ConsoleKey.D2);
 
         Console.WriteLine("Question 5: Having a tattoo makes you a bad person?");
         Console.WriteLine("1 - Yes, if my son gets a tattoo he is a criminal");
@@ -242,17 +199,7 @@ internal class Program
         Console.WriteLine("3 - No, it is just an artisitc movement");
         Console.WriteLine("4 - No, but it's not healthy");
 
-        tecla = Console.ReadKey();
-        switch (tecla.Key)
-        {
-            case ConsoleKey.D1:
-                Console.WriteLine("CORRECT! +1 POINT");
-                punctuation++;
-                break;
-            default:
-                Console.WriteLine("INCORRECT! 0 POINTS");
-                break;
-        }
+        score += PressKey(ConsoleKey.D3);
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
