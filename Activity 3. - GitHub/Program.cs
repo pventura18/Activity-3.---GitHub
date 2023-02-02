@@ -47,7 +47,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D6:
-                    //DoTattoos(punctuation);
+                    DoTattoos(punctuation);
                     break;
 
                 case ConsoleKey.D7:
@@ -84,7 +84,7 @@ internal class Program
     }
 
     //Pol Ventura
-    public static void DoVodka(int punctuation)
+    public static void DoVodka(ref int punctuation)
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
@@ -171,6 +171,109 @@ internal class Program
         Console.WriteLine("2 - Yes, during cold war");
         Console.WriteLine("3 - Yes, during WW2");
         Console.WriteLine("4 - No, never");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
+
+    public static void DoTattoos(ref int punctuation)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE VODKA QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo tecla;
+
+        Console.WriteLine("Question 1: Does your hair grow back with a tattoo?");
+        Console.WriteLine("1 - Yes, but less hair.");
+        Console.WriteLine("2 - No");
+        Console.WriteLine("3 - Yes, but it falls");
+        Console.WriteLine("4 - It doesn't change anything");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D4:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+
+        Console.WriteLine("Question 2: Which type of ink does it hurt the most?");
+        Console.WriteLine("1 - Bright ink");
+        Console.WriteLine("2 - Dark ink");
+        Console.WriteLine("3 - It doesn't hurt");
+        Console.WriteLine("4 - They all hurt the same");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D4:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+
+        Console.WriteLine("Question 3: It is good to drink alcohol before a tattoo?");
+        Console.WriteLine("1 - No, it makes you bleed more");
+        Console.WriteLine("2 - No, it makes the tattoo hurt more");
+        Console.WriteLine("3 - Yes, why not?");
+        Console.WriteLine("4 - Yes, it helps you feel less pain");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+
+        Console.WriteLine("Question 4: Chlorinated pool water discolours the tattoo?");
+        Console.WriteLine("1 - No, it helps you to have more color in the tattoo");
+        Console.WriteLine("2 - No, but it is recommended not to go to the pool if it is not healed");
+        Console.WriteLine("3 - No, but it changes the colors of the tattoo for example making black tattoos blue");
+        Console.WriteLine("4 - Yes");
+
+        tecla = Console.ReadKey();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D2:
+                Console.WriteLine("CORRECT! +1 POINT");
+                punctuation++;
+                break;
+            default:
+                Console.WriteLine("INCORRECT! 0 POINTS");
+                break;
+        }
+
+
+        Console.WriteLine("Question 5: Having a tattoo makes you a bad person?");
+        Console.WriteLine("1 - Yes, if my son gets a tattoo he is a criminal");
+        Console.WriteLine("2 - If someone has a tattoo, this person is a murderer");
+        Console.WriteLine("3 - No, it is just an artisitc movement");
+        Console.WriteLine("4 - No, but it's not healthy");
 
         tecla = Console.ReadKey();
         switch (tecla.Key)
