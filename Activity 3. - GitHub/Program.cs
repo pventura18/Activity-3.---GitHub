@@ -28,7 +28,7 @@ internal class Program
             switch (tecla.Key)
             {
                 case ConsoleKey.D1:
-                    //DoTobacco(punctuation);
+                    DoTobacco(ref score);
                     break;
 
                 case ConsoleKey.D2:
@@ -306,6 +306,54 @@ internal class Program
         Console.WriteLine("4 - No, but helps you fall asleep");
 
         score += PressKey(ConsoleKey.D3);
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
+    public static void DoTobacco(ref int score)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE TOBACCO QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
+
+        Console.WriteLine("Question 1: What is the most buyed tobacco?");
+        Console.WriteLine("1 - Marlboro");
+        Console.WriteLine("2 - Camel");
+        Console.WriteLine("3 - Pall Mall");
+        Console.WriteLine("4 - Ducados");
+
+        score += PressKey(ConsoleKey.D1);
+
+        Console.WriteLine("Question 2: What country smokes the most?");
+        Console.WriteLine("1 - Spain");
+        Console.WriteLine("2 - France");
+        Console.WriteLine("3 - Andorra");
+        Console.WriteLine("4 - Argentina");
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 3: What does tobacco contain?");
+        Console.WriteLine("1 - Style");
+        Console.WriteLine("2 - Proteins");
+        Console.WriteLine("3 - A car");
+        Console.WriteLine("4 - Substances that may provoke cancer");
+
+        score += PressKey(ConsoleKey.D4);
+
+        Console.WriteLine("Question 4: Tobacco comes from...");
+        Console.WriteLine("1 - Spain");
+        Console.WriteLine("2 - France");
+        Console.WriteLine("3 - America");
+        Console.WriteLine("4 - Congo"); 
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 5: Is tobacco healthy?");
+        Console.WriteLine("1 - No, never");
+        Console.WriteLine("2 - Yes");
+        Console.WriteLine("3 - Yes, in little quantities");
+        Console.WriteLine("4 - No, but helps your pulmonar capacity");
+
+        score += PressKey(ConsoleKey.D1);
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
