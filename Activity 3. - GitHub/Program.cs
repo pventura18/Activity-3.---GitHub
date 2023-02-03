@@ -40,7 +40,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D4:
-                    //DoCoffee(punctuation);
+                    DoCoffee(ref score);
                     break;
 
                 case ConsoleKey.D5:
@@ -258,7 +258,7 @@ internal class Program
 
 
     //Pol Besalú
-#endregion
+
 
     #region Pol Besalú
     public static void DoCoffee(ref int score)
