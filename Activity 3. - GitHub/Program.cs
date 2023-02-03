@@ -261,6 +261,7 @@ internal class Program
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE COFFEE QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
 
         Console.WriteLine("Question 1: What is coffee?");
         Console.WriteLine("1 - A type of seed");
@@ -308,6 +309,7 @@ internal class Program
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE TOBACCO QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
 
         Console.WriteLine("Question 1: What is the most buyed tobacco?");
         Console.WriteLine("1 - Marlboro");
@@ -355,6 +357,7 @@ internal class Program
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE BASKETBALL QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
 
         Console.WriteLine("Question 1: Who is the Greek freak?");
         Console.WriteLine("1 - Gianis Antetokounmpo");
