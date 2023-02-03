@@ -255,9 +255,8 @@ internal class Program
 
     #endregion
 
-
     //Pol Besalú
-
+    #region Pol Besalú
     public static void DoCoffee(ref int score)
     {
         Console.Clear();
@@ -399,54 +398,54 @@ internal class Program
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
-    }
     #endregion
 
+    //Martí Roura
     #region Martí Roura
     public static void DoBeer(ref int score)
     {
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE BEER QUIZ! PRESS ANY KEY TO START");
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 1: What month is Germany's famouse beer festival?");
+        Console.WriteLine("1 - September");
+        Console.WriteLine("2 - October");
+        Console.WriteLine("3 - June");
+        Console.WriteLine("4 - March");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D2);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 2: Which country consumes the most beer per capita?");
+        Console.WriteLine("1 - Ireland");
+        Console.WriteLine("2 - England");   
+        Console.WriteLine("3 - China");
+        Console.WriteLine("4 - Czechia");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D4);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 3: What brewery is the oldest in the world?");
+        Console.WriteLine("1 - Heineken");
+        Console.WriteLine("2 - Weihenstephaner");
+        Console.WriteLine("3 - Amstel");
+        Console.WriteLine("4 - Hefeweizen");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D2);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 4: What chemical compound does beer contain?");
+        Console.WriteLine("1 - Chloride");
+        Console.WriteLine("2 - Acid");
+        Console.WriteLine("3 - Methane");
+        Console.WriteLine("4 - Ethanol");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D4);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 5: What brand of beer sponsors the UEFA Champions League?");
+        Console.WriteLine("1 - Hoinken");
+        Console.WriteLine("2 - Hainkun");
+        Console.WriteLine("3 - Heineken");
+        Console.WriteLine("4 - Heinakan");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D3);
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
@@ -456,45 +455,45 @@ internal class Program
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE FOOTBALL QUIZ! PRESS ANY KEY TO START");
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 1: How many people can play at the same time in a team?");
+        Console.WriteLine("1 - 10");
+        Console.WriteLine("2 - 12");
+        Console.WriteLine("3 - 9");
+        Console.WriteLine("4 - 11");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D4);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 2: What shape does the ball have?");
+        Console.WriteLine("1 - Sphere");
+        Console.WriteLine("2 - Pyramid");
+        Console.WriteLine("3 - Dodecahedron");
+        Console.WriteLine("4 - Cube");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D1);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 3: In which country did football first appear?");
+        Console.WriteLine("1 - United Kingdom");
+        Console.WriteLine("2 - Brazil");
+        Console.WriteLine("3 - Argentina");
+        Console.WriteLine("4 - Spain");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D1);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 4: What country won the first World Cup?");
+        Console.WriteLine("1 - United Kingdom");
+        Console.WriteLine("2 - Brazil");
+        Console.WriteLine("3 - Germany");
+        Console.WriteLine("4 - Uruguay");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D4);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 5: How many World Cups does Argentina have?");
+        Console.WriteLine("1 - 3");
+        Console.WriteLine("2 - 2");
+        Console.WriteLine("3 - 1");
+        Console.WriteLine("4 - 0");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D1);
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
@@ -504,45 +503,45 @@ internal class Program
         Console.Clear();
         MsgNextScreen("YOU CHOSE THE DOLPHINS QUIZ! PRESS ANY KEY TO START");
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 1: What do young dolphins learn from their mothers?");
+        Console.WriteLine("1 - to forage for food");
+        Console.WriteLine("2 - to socialize in the pod");
+        Console.WriteLine("3 - to defend itself from other dolphins");
+        Console.WriteLine("4 - all of the above");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D4);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 2: On average, how long do most dolphins live?");
+        Console.WriteLine("1 - 5");
+        Console.WriteLine("2 - 10");
+        Console.WriteLine("3 - 25");
+        Console.WriteLine("4 - 40");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D3);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 3: When did dolphins first appear on earth?");
+        Console.WriteLine("1 - 50 million years ago as land animals");
+        Console.WriteLine("2 - 10 million years ago as water mammals");
+        Console.WriteLine("3 - 10,000 years ago as fish");
+        Console.WriteLine("4 - 4000 years ago as dolphin-like fish");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D1);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 4: How deep can some dolphins dive?");
+        Console.WriteLine("1 - 100 meters");
+        Console.WriteLine("2 - 300 meters");
+        Console.WriteLine("3 - 500 meters");
+        Console.WriteLine("4 - 1000 meters");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D2);
 
-        Console.WriteLine("Question X: ");
-        Console.WriteLine("1 - ");
-        Console.WriteLine("2 - ");
-        Console.WriteLine("3 - ");
-        Console.WriteLine("4 - ");
+        Console.WriteLine("Question 5: What do dolphins eat?");
+        Console.WriteLine("1 - Humans");
+        Console.WriteLine("2 - Dogs");
+        Console.WriteLine("3 - Fish, squid and crustacean");
+        Console.WriteLine("4 - Seaweed");
 
-        score += PressKey(ConsoleKey.);
+        score += PressKey(ConsoleKey.D3);
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
