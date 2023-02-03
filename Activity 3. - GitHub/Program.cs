@@ -261,6 +261,54 @@ internal class Program
 #endregion
 
     #region Pol Besalú
+    public static void DoCoffee(ref int score)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE COFFEE QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
+
+        Console.WriteLine("Question 1: What is coffee?");
+        Console.WriteLine("1 - A type of seed");
+        Console.WriteLine("2 - A drink");
+        Console.WriteLine("3 - A social event");
+        Console.WriteLine("4 - A tobacco brand");
+
+        score += PressKey(ConsoleKey.D1);
+
+        Console.WriteLine("Question 2: What is the coffee originary from?");
+        Console.WriteLine("1 - Spain");
+        Console.WriteLine("2 - France");
+        Console.WriteLine("3 - Etiopia");
+        Console.WriteLine("4 - Colombia");
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 3: What does coffee do to your body?");
+        Console.WriteLine("1 - Makes it more sensitive to enviromental changes");
+        Console.WriteLine("2 - Relax it");
+        Console.WriteLine("3 - Makes it more powerfull");
+        Console.WriteLine("4 - Stress it");
+
+        score += PressKey(ConsoleKey.D4);
+
+        Console.WriteLine("Question 4: Coffee is tastes better...");
+        Console.WriteLine("1 - With sugar");
+        Console.WriteLine("2 - Soy milk");
+        Console.WriteLine("3 - Alone if you put something in your coffee you don't actually like coffee");
+        Console.WriteLine("4 - Almond milk");
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 5: Is coffee healthy?");
+        Console.WriteLine("1 - No, never");
+        Console.WriteLine("2 - Yes");
+        Console.WriteLine("3 - Yes, in little quantities");
+        Console.WriteLine("4 - No, but helps you fall asleep");
+
+        score += PressKey(ConsoleKey.D3);
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
     #endregion
 
     #region Martí Roura
