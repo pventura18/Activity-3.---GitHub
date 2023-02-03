@@ -48,7 +48,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D6:
-                    DoTattoos(score);
+                    DoTattoos(ref score);
                     break;
 
                 case ConsoleKey.D7:
@@ -60,7 +60,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D9:
-                    DoTennis(score);
+                    DoTennis(ref score);
                     break;
 
                 case ConsoleKey.D0:
