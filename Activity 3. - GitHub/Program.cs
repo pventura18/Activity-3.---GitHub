@@ -1,7 +1,6 @@
 ﻿
 internal class Program
 {
-
     #region Menu
     private static void Main(string[] args)
     {
@@ -32,7 +31,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D2:
-                    //DoBeer(punctuation);
+                    DoBeer(ref score);
                     break;
 
                 case ConsoleKey.D3:
@@ -44,7 +43,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D5:
-                    //DoFootball(punctuation);
+                    DoFootball(ref score);
                     break;
 
                 case ConsoleKey.D6:
@@ -52,7 +51,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D7:
-                    //DoDolphins(punctuation);
+                    DoDolphins(ref score);
                     break;
 
                 case ConsoleKey.D8:
