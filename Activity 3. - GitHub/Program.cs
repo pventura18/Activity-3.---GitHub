@@ -56,7 +56,7 @@ internal class Program
                     break;
 
                 case ConsoleKey.D8:
-                    //DoBasketball(punctuation);
+                    DoBasketball(ref score);
                     break;
 
                 case ConsoleKey.D9:
@@ -352,6 +352,54 @@ internal class Program
         Console.WriteLine("2 - Yes");
         Console.WriteLine("3 - Yes, in little quantities");
         Console.WriteLine("4 - No, but helps your pulmonar capacity");
+
+        score += PressKey(ConsoleKey.D1);
+
+        MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
+    }
+    public static void DoBasketball(ref int score)
+    {
+        Console.Clear();
+        MsgNextScreen("YOU CHOSE THE BASKETBALL QUIZ! PRESS ANY KEY TO START");
+        ConsoleKeyInfo key;
+
+        Console.WriteLine("Question 1: Who is the Greek freak?");
+        Console.WriteLine("1 - Gianis Antetokounmpo");
+        Console.WriteLine("2 - Michael Jordan");
+        Console.WriteLine("3 - Lebron James");
+        Console.WriteLine("4 - Kevin Durant");
+
+        score += PressKey(ConsoleKey.D1);
+
+        Console.WriteLine("Question 2: Who has scored more three pointers in all the NBA history?");
+        Console.WriteLine("1 - Kevin Love");
+        Console.WriteLine("2 - Damian Lillard");
+        Console.WriteLine("3 - Stephen Curry");
+        Console.WriteLine("4 - Larry Bird");
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 3: What is the duration of a basketball match?");
+        Console.WriteLine("1 - 50 minutes");
+        Console.WriteLine("2 - 90 minutes");
+        Console.WriteLine("3 - 180 minutes");
+        Console.WriteLine("4 - 40 minutes");
+
+        score += PressKey(ConsoleKey.D4);
+
+        Console.WriteLine("Question 4: Who is the man that scored more points in a match of the NBA");
+        Console.WriteLine("1 - Michael Jordan");
+        Console.WriteLine("2 - Kobe Bryant");
+        Console.WriteLine("3 - Wilt Chamberlain");
+        Console.WriteLine("4 - Denis Rodman");
+
+        score += PressKey(ConsoleKey.D3);
+
+        Console.WriteLine("Question 5: Which basketball player doesn't have a shoe brand?");
+        Console.WriteLine("1 - Chandler Parsons");
+        Console.WriteLine("2 - Michael Jordan");
+        Console.WriteLine("3 - Shaquille Oneal");
+        Console.WriteLine("4 - Kyre Irving");
 
         score += PressKey(ConsoleKey.D1);
 
