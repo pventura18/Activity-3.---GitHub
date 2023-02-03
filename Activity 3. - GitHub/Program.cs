@@ -343,7 +343,7 @@ internal class Program
         Console.WriteLine("1 - Spain");
         Console.WriteLine("2 - France");
         Console.WriteLine("3 - America");
-        Console.WriteLine("4 - Congo");
+        Console.WriteLine("4 - Congo"); 
 
         score += PressKey(ConsoleKey.D3);
 
