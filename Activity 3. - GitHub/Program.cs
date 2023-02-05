@@ -4,11 +4,13 @@ internal class Program
     #region Menu
     private static void Main(string[] args)
     {
+        //We declare the variables
         int score = 0;
         ConsoleKeyInfo tecla;
 
         do
         {
+            //Show the menu options.
             Console.Clear();
 
             Console.WriteLine("Main menu");
@@ -23,6 +25,7 @@ internal class Program
             Console.WriteLine("Press 9 or tennis");
             Console.WriteLine("Press 0 to exit");
 
+            //Press a key to select option
             tecla = Console.ReadKey();
             switch (tecla.Key)
             {
@@ -78,13 +81,15 @@ internal class Program
         Console.WriteLine($"CONGRATULATIONS YOUR PUNCTUATION IS {score}!");
     }
     #endregion
-
+    //Action to show a message in screen and wait until user press key.
     #region Commons
     public static void MsgNextScreen(string msg)
     {
         Console.WriteLine(msg);
         Console.ReadKey();
     }
+
+    //Function that returns 1 if user chose the correct option and 0 if not.
     public static int PressKey(ConsoleKey correctOption)
     {
         ConsoleKeyInfo tecla = Console.ReadKey();
@@ -102,6 +107,7 @@ internal class Program
 
     //Pol Ventura
     #region Pol Ventura
+    //Vodka topic questions
     public static void DoVodka(ref int score)
     {
         Console.Clear();
@@ -151,6 +157,7 @@ internal class Program
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
 
+    //Tattoos topic questions
     public static void DoTattoos(ref int score)
     {
         Console.Clear();
@@ -201,6 +208,7 @@ internal class Program
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
 
+    //Tennis topic questions
     public static void DoTennis(ref int score)
     {
         Console.Clear();
@@ -256,6 +264,7 @@ internal class Program
 
     //Pol Besalú
     #region Pol Besalú
+    //Coffee topic questions
     public static void DoCoffee(ref int score)
     {
         Console.Clear();
@@ -304,6 +313,8 @@ internal class Program
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
+
+    //Tobacco topic questions
     public static void DoTobacco(ref int score)
     {
         Console.Clear();
@@ -352,6 +363,8 @@ internal class Program
 
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
+
+    //Basketball topic questions
     public static void DoBasketball(ref int score)
     {
         Console.Clear();
@@ -404,6 +417,8 @@ internal class Program
 
     //Martí Roura
     #region Martí Roura
+
+    //Beer topic questions
     public static void DoBeer(ref int score)
     {
         Console.Clear();
@@ -452,6 +467,7 @@ internal class Program
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
 
+    //Football topic questions
     public static void DoFootball(ref int score)
     {
         Console.Clear();
@@ -500,6 +516,7 @@ internal class Program
         MsgNextScreen("PRESS ANY KEY TO CONTINUE!");
     }
 
+    //Dolphins topic questions.
     public static void DoDolphins(ref int score)
     {
         Console.Clear();
